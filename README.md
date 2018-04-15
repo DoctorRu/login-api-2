@@ -26,3 +26,14 @@ select Body, raw, JSON (application/json) and use the content below:
     }
 
 You should receive the User created successfully message as the response.
+
+
+
+# Links
+
+Bcrypt / SecurePassword
+
+http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html#method-i-has_secure_password
+
+
+https://github.com/codahale/bcrypt-ruby
