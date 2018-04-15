@@ -1,24 +1,28 @@
-# README
+# Rails Login API JWT based
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Original post by Vinoth
 
-Things you may want to cover:
+Article
 
-* Ruby version
+https://www.sitepoint.com/authenticate-your-rails-api-with-jwt-from-scratch/
 
-* System dependencies
+Github
 
-* Configuration
+https://github.com/avinoth/auth-scratch-demo
 
-* Database creation
+**Testing API**
+Users
 
-* Database initialization
+User POSTMAN to send a POST request to localhost:3000/users<br>
+select Body, raw, JSON (application/json) and use the content below:
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+    {
+        "user" : {
+            "email" :"email@email.com",
+            "password" :"password",
+            "password_conirmation" :"password"
+        }
+    }
 
-* Deployment instructions
-
-* ...
+You should receive the User created successfully message as the response.

@@ -1,9 +1,7 @@
 class UsersController < ApplicationController
     
     def create
-        
-        # curl -X POST -d '"user": "{email":"example@mail.com","password":"12345", "password_confirmation":"12345"}"' http://localhost:3000/users
-        
+       
         user = User.new(user_params)
         
         if user.save
